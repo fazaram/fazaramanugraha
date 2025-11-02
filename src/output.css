@@ -211,6 +211,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
@@ -229,6 +232,15 @@
   .table {
     display: table;
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -238,8 +250,14 @@
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
   }
   .w-auto {
     width: auto;
@@ -274,6 +292,9 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-baseline {
+    justify-content: baseline;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -282,6 +303,9 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .justify-start {
     justify-content: flex-start;
@@ -304,6 +328,9 @@
   }
   .bg-\[\#171612\] {
     background-color: #171612;
+  }
+  .bg-\[\#d4bc9d\] {
+    background-color: #d4bc9d;
   }
   .bg-white {
     background-color: var(--color-white);
