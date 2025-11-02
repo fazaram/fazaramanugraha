@@ -14,7 +14,7 @@
     <!-- Hero Section -->
     <section
       id="about"
-      class="w-fit flex flex-col items-center justify-center py-5 px-10"
+      class="flex flex-col items-center justify-center py-5 px-10"
     >
       <div
         class="flex w-full justify-center items-center text-center bg-[#171612] px-8 py-4 rounded-lg shadow-lg mb-4"
@@ -43,19 +43,29 @@
           </p>
         </div>
         <!-- image -->
-        <div class="col-span-1 w-full bg-[#171612] rounded-lg">
+        <div class="col-span-1 row-span-3 w-full bg-[#171612] rounded-lg">
           <img src="./public/img/faza.png" alt="" class="w-auto h-full" />
         </div>
 
         <!-- about me -->
-        <div class="col-span-1 row-span-1 w-full bg-[#171612] rounded-lg p-4">
-          <h3
-            class="flex text-2xl text-[#aa967b] font-['breathing'] justify-start my-4"
-          >
-            About me
+        <div
+          class="relative col-span-1 row-span-1 w-full bg-[#171612] rounded-lg p-6"
+        >
+          <!-- Icon Background -->
+          <img
+            src="./public/img/icon/flower.png"
+            alt="Flower Icon"
+            class="absolute w-24 h-24 top-4 right-4"
+          />
+
+          <!-- Title -->
+          <h3 class="text-2xl text-[#aa967b] font-['breathing'] mb-4">
+            About Me
           </h3>
+
+          <!-- Description -->
           <p
-            class="flex text-base text-[#aa967b] font-['Times'] justify-start mb-4"
+            class="text-base text-[#aa967b] font-['Times'] leading-relaxed mb-6"
           >
             Passionate IT graduate with a Bachelor’s degree in Information and
             Communication Technology from Asia e University and a Diploma from
@@ -65,47 +75,78 @@
             Dedicated to continuous learning and developing efficient, secure,
             and scalable digital solutions.
           </p>
-          <div class="flex text-end">
-            <button class="flex justify-start items-center gap-2">
-              <img src="./public/img/icon/cv.png" alt="" class="w-7" />
-              <p
-                class="flex text-base text-[#aa967b] font-['Times'] justify-start items-end"
-              >
-                Download my cv
-              </p>
+
+          <!-- Download CV Button -->
+          <div class="flex justify-start">
+            <button
+              class="flex items-center gap-2 text-[#aa967b] font-['Times'] hover:text-[#cbb79a] transition-colors"
+            >
+              <img src="./public/img/icon/cv.png" alt="CV Icon" class="w-7" />
+              <span class="text-base">Download my CV</span>
               <img
                 src="./public/img/icon/download.png"
-                alt=""
-                class="w-4 items-end"
+                alt="Download Icon"
+                class="w-4"
               />
             </button>
           </div>
         </div>
+
         <!-- Portfolio -->
-        <div
-          class="flex flex-col col-span-1 justify-between bg-[#171612] rounded-lg px-6 py-4"
-        >
-          <p
-            class="flex text-4xl text-[#aa967b] font-['breathing'] justify-start mt-6 mb-4"
+        <a href="#portfolio">
+          <div
+            class="relative grid col-span-1 justify-between bg-[#171612] rounded-lg px-6 py-4"
           >
-            Portfolio
-          </p>
-        </div>
+            <img src="./public/img/icon/port.png" alt="" />
+            <p
+              class="flex text-4xl text-[#aa967b] font-['breathing'] justify-start mt-6 mb-4"
+            >
+              Portfolio
+            </p>
+            <img
+              src="./public/img/icon/arrow.png"
+              alt=""
+              class="absolute w-24 top-5 right-0"
+            />
+          </div>
+        </a>
         <!-- Contact me -->
-        <div
-          class="flex flex-col col-span-1 justify-between bg-[#171612] rounded-lg px-6 py-4"
-        >
+        <div>
+          <img
+            src="./public/img/icon/canvas.png"
+            class="relative flex flex-col col-span-1 justify-between bg-[#171612] rounded-lg px-6 py-4"
+          />
           <p
             class="flex text-4xl text-[#aa967b] font-['breathing'] justify-start mb-4"
           >
             Contact me
           </p>
+          <img
+            src="./public/img/icon/arrow2.png"
+            alt=""
+            class="absolute w-24 right-0 top-20"
+          />
         </div>
         <!-- socmed -->
         <div
-          class="flex flex-col col-span-1 justify-between bg-[#171612] rounded-lg px-6 py-4"
+          class="flex flex-row col-span-1 justify-between items-center bg-[#171612] rounded-lg px-6 py-4 gap-4"
         >
-          <img src="" alt="" />
+          <a href="https://www.instagram.com/fazaraman/" target="_blank"
+            ><img src="./public/img/icon/ig.png" alt="" class="w-16 h-16"
+          /></a>
+          <a href="https://www.linkedin.com/in/fazaramanugraha" target="_blank">
+            <img
+              src="./public/img/icon/linkedin.png"
+              alt=""
+              class="w-16 h-16"
+            />
+          </a>
+          <a href="https://github.com/fazaram" target="_blank"
+            ><img src="./public/img/icon/github.png" alt="" class="w-16 h-16"
+          /></a>
+          <a href="mailto:fazaramanugraha@gmail.com" target="_blank">
+            <img src="./public/img/icon/email.png" alt="" class="w-16 h-16" />
+          </a>
         </div>
       </div>
     </section>
@@ -124,7 +165,7 @@
               alt=""
               class="w-2xl rounded-lg m-4"
             />
-            <div class="flex flex-col">
+            <div class="flex flex-col m-4">
               <p class="font-['times'] text-lg">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
                 expedita ea delectus cumque veritatis aspernatur reprehenderit
@@ -134,13 +175,20 @@
                 tempore expedita assumenda, neque incidunt doloremque nobis
                 optio maxime.
               </p>
-              <a
-                href="https://www.smp-baktiidhata.sch.id"
-                target="_blank"
-                class="text-start font-[times]"
-              >
-                Lihat detail &RightArrow;
-              </a>
+              <div class="flex mt-10 text-center items-center gap-2">
+                <a
+                  href="https://www.smp-baktiidhata.sch.id"
+                  target="_blank"
+                  class="font-[times]"
+                >
+                  Lihat detail
+                </a>
+                <img
+                  src="./public/img/icon/arrow4.png"
+                  alt=""
+                  class="w-10 h-10"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -160,13 +208,20 @@
                 tempore expedita assumenda, neque incidunt doloremque nobis
                 optio maxime.
               </p>
-              <a
-                href="https://www.solvia.id"
-                target="_blank"
-                class="text-start font-[times]"
-              >
-                Lihat detail &RightArrow;
-              </a>
+              <div class="flex mt-10 text-center items-center gap-2">
+                <a
+                  href="https://www.solvia.id"
+                  target="_blank"
+                  class="font-[times]"
+                >
+                  Lihat detail
+                </a>
+                <img
+                  src="./public/img/icon/arrow4.png"
+                  alt=""
+                  class="w-10 h-10"
+                />
+              </div>
             </div>
             <img
               src="./public/img/projects/solvia.png"
