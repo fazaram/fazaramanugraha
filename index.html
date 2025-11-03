@@ -14,139 +14,160 @@
     <!-- Hero Section -->
     <section
       id="about"
-      class="max-w-7xl mx-auto flex flex-col items-center justify-center py-5 px-10"
+      class="flex flex-col items-center justify-center py-5 px-10"
     >
       <div
-        class="flex w-full justify-center items-center text-center bg-[#171612] px-8 py-4 rounded-lg shadow-lg mb-4"
+        class="flex w-full justify-center items-center text-center bg-[#171612] px-8 py-5 rounded-lg shadow-lg mb-8"
       >
-        <h1 class="text-3xl font-['breathing'] text-[#aa967b]">
+        <h1 class="text-4xl font-['breathing'] text-[#aa967b]">
           Faza Rama Nugraha
         </h1>
       </div>
       <!-- grid -->
-      <div class="grid grid-cols-4 grid-rows-2 gap-4">
-        <div
-          class="grid col-span-2 justify-between bg-[#171612] rounded-lg px-6 py-4"
-        >
-          <div class="flex justify-end">
-            <img src="./public/img/icon/star.png" alt="" class="w-32 mb-6" />
+      <div class="gap-4">
+<!-- kanan kiri -->
+        <div class="w-full flex gap-10">
+                  <!-- atas bawah -->
+          <div class="w-full flex flex-col gap-10">
+            <div class="flex flex-row h-1/2 gap-10">
+              <div
+                class="w-full justify-between bg-[#171612] rounded-lg px-6 py-4"
+              >
+                <div class="flex justify-end">
+                  <img
+                    src="./public/img/icon/star.png"
+                    alt=""
+                    class="w-32 mb-6"
+                  />
+                </div>
+                <p
+                  class="flex text-6xl text-[#aa967b] font-['breathing'] justify-start mb-4"
+                >
+                  Fullstack
+                </p>
+                <p
+                  class="flex text-6xl text-[#aa967b] font-['breathing'] justify-end"
+                >
+                  Developer
+                </p>
+              </div>
+              <!-- image -->
+              <div class="w-2/3 bg-[#171612] rounded-lg">
+                <img
+                  src="./public/img/faza.png"
+                  alt=""
+                  class="w-[80%] h-auto rounded-xl"
+                />
+              </div>
+            </div>
+            <!-- Portfolio -->
+            <div class="flex h-1/2 gap-10">
+                <div class="w-1/2 bg-[#171612] rounded-lg ">
+                  <a href="#portfolio"></a>
+                    <p
+                      class="flex text-6xl text-[#aa967b] font-['breathing'] justify-start items-center"
+                    >
+                      Portfolio
+                    </p>
+                  </a>
+                </div>
+
+              <div class="w-1/2 bg-[#171612] rounded-lg">
+                <p
+                  class="flex text-6xl text-[#aa967b] font-['breathing'] justify-start"
+                >
+                  Contact me
+                </p>
+                <img
+                  src="./public/img/icon/arrow2.png"
+                  alt=""
+                  class="absolute w-24 right-0 top-20"
+                />
+              </div>
+            </div>
+            <!-- Contact me -->
           </div>
-          <p
-            class="flex text-4xl text-[#aa967b] font-['breathing'] justify-start mb-4"
-          >
-            Fullstack
-          </p>
-          <p
-            class="flex text-4xl text-[#aa967b] font-['breathing'] justify-end"
-          >
-            Developer
-          </p>
-        </div>
-        <!-- image -->
-        <div class="col-span-1 row-span-3 w-full bg-[#171612] rounded-lg">
-          <img src="./public/img/faza.png" alt="" class="w-auto h-full" />
-        </div>
 
-        <!-- about me -->
-        <div
-          class="relative col-span-1 row-span-1 w-full bg-[#171612] rounded-lg p-6"
-        >
-          <!-- Icon Background -->
-          <img
-            src="./public/img/icon/flower.png"
-            alt="Flower Icon"
-            class="absolute w-24 h-24 top-4 right-4"
-          />
-
-          <!-- Title -->
-          <h3 class="text-2xl text-[#aa967b] font-['breathing'] mb-4">
-            About Me
-          </h3>
-
-          <!-- Description -->
-          <p
-            class="text-base text-[#aa967b] font-['Times'] leading-relaxed mb-6"
-          >
-            Passionate IT graduate with a Bachelor’s degree in Information and
-            Communication Technology from Asia e University and a Diploma from
-            CCIT FTUI. Skilled in PHP, Laravel, JavaScript, MySQL, and Tailwind
-            CSS, with experience in software development, cybersecurity, and
-            data engineering using modern tools and cloud technologies.
-            Dedicated to continuous learning and developing efficient, secure,
-            and scalable digital solutions.
-          </p>
-
-          <!-- Download CV Button -->
-          <div class="flex justify-start">
-            <button
-              class="flex items-center gap-2 text-[#aa967b] font-['Times'] hover:text-[#cbb79a] transition-colors"
-            >
-              <img src="./public/img/icon/cv.png" alt="CV Icon" class="w-7" />
-              <span class="text-base">Download my CV</span>
+          <div class="w-2/3 flex flex-col gap-2">
+            <!-- about me -->
+            <div class="bg-[#171612] rounded-lg px-10 py-18">
+              <!-- Icon Background -->
               <img
-                src="./public/img/icon/download.png"
-                alt="Download Icon"
-                class="w-4"
+                src="./public/img/icon/flower.png"
+                alt="Flower Icon"
+                class="absolute w-24 h-24 top-4 right-4"
               />
-            </button>
-          </div>
-        </div>
 
-        <!-- Portfolio -->
-        <a href="#portfolio">
-          <div
-            class="relative grid col-span-1 justify-between bg-[#171612] rounded-lg px-6 py-4"
-          >
-            <img src="./public/img/icon/port.png" alt="" />
-            <p
-              class="flex text-4xl text-[#aa967b] font-['breathing'] justify-start mt-6 mb-4"
+              <!-- Title -->
+              <h3 class="text-5xl text-[#aa967b] font-['breathing'] mb-4">
+                About Me
+              </h3>
+
+              <!-- Description -->
+              <p
+                class="text-2xl text-[#aa967b] font-['Times'] leading-relaxed mb-6 pr-10"
+              >
+                Passionate IT graduate with a Bachelor’s degree in Information
+                and Communication Technology from Asia e University and a
+                Diploma from CCIT FTUI. Skilled in PHP, Laravel, JavaScript,
+                MySQL, and Tailwind CSS, with experience in software
+                development, cybersecurity, and data engineering using modern
+                tools and cloud technologies. Dedicated to continuous learning
+                and developing efficient, secure, and scalable digital
+                solutions.
+              </p>
+
+              <!-- Download CV Button -->
+              <div class="flex justify-start">
+                <button
+                  class="flex items-center gap-2 text-[#aa967b] font-['Times'] hover:text-[#cbb79a] transition-colors"
+                >
+                  <img
+                    src="./public/img/icon/cv.png"
+                    alt="CV Icon"
+                    class="w-7"
+                  />
+                  <span class="text-base">Download my CV</span>
+                  <img
+                    src="./public/img/icon/download.png"
+                    alt="Download Icon"
+                    class="w-4"
+                  />
+                </button>
+              </div>
+            </div>
+            <!-- socmed -->
+            <div
+              class="flex flex-row col-span-1 justify-between items-center bg-[#171612] rounded-lg px-6 py-4 gap-4"
             >
-              Portfolio
-            </p>
-            <img
-              src="./public/img/icon/arrow.png"
-              alt=""
-              class="absolute w-24 top-5 right-0"
-            />
+              <a href="https://www.instagram.com/fazaraman/" target="_blank"
+                ><img src="./public/img/icon/ig.png" alt="" class="w-16 h-16"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/fazaramanugraha"
+                target="_blank"
+              >
+                <img
+                  src="./public/img/icon/linkedin.png"
+                  alt=""
+                  class="w-16 h-16"
+                />
+              </a>
+              <a href="https://github.com/fazaram" target="_blank"
+                ><img
+                  src="./public/img/icon/github.png"
+                  alt=""
+                  class="w-16 h-16"
+              /></a>
+              <a href="mailto:fazaramanugraha@gmail.com" target="_blank">
+                <img
+                  src="./public/img/icon/email.png"
+                  alt=""
+                  class="w-16 h-16"
+                />
+              </a>
+            </div>
           </div>
-        </a>
-        <!-- Contact me -->
-        <div>
-          <img
-            src="./public/img/icon/canvas.png"
-            class="relative flex flex-col col-span-1 justify-between bg-[#171612] rounded-lg px-6 py-4"
-          />
-          <p
-            class="flex text-4xl text-[#aa967b] font-['breathing'] justify-start mb-4"
-          >
-            Contact me
-          </p>
-          <img
-            src="./public/img/icon/arrow2.png"
-            alt=""
-            class="absolute w-24 right-0 top-20"
-          />
-        </div>
-        <!-- socmed -->
-        <div
-          class="flex flex-row col-span-1 justify-between items-center bg-[#171612] rounded-lg px-6 py-4 gap-4"
-        >
-          <a href="https://www.instagram.com/fazaraman/" target="_blank"
-            ><img src="./public/img/icon/ig.png" alt="" class="w-16 h-16"
-          /></a>
-          <a href="https://www.linkedin.com/in/fazaramanugraha" target="_blank">
-            <img
-              src="./public/img/icon/linkedin.png"
-              alt=""
-              class="w-16 h-16"
-            />
-          </a>
-          <a href="https://github.com/fazaram" target="_blank"
-            ><img src="./public/img/icon/github.png" alt="" class="w-16 h-16"
-          /></a>
-          <a href="mailto:fazaramanugraha@gmail.com" target="_blank">
-            <img src="./public/img/icon/email.png" alt="" class="w-16 h-16" />
-          </a>
         </div>
       </div>
     </section>
