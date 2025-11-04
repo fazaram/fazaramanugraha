@@ -26,87 +26,78 @@
       </div>
 
       <!-- Main Layout -->
-      <div class="flex flex-col lg:flex-row w-full gap-10">
+      <div class="grid md:grid-cols-1 grid-cols-4 w-full gap-10">
         <!-- Left Column -->
-        <div class="w-full lg:w-3/5 flex flex-col gap-10">
-          <!-- Fullstack Developer + About -->
-          <div class="flex flex-col md:flex-row gap-6">
-            <!-- Fullstack Box -->
-            <div
-              class="w-1/3 bg-[#171612] rounded-lg px-8 py-10 flex flex-col justify-between"
-            >
-              <div class="flex justify-end">
-                <img
-                  src="./public/img/icon/star.png"
-                  alt="Star Icon"
-                  class="w-44"
-                />
-              </div>
-              <div class="flex flex-col justify-between gap-2">
-                <p class="text-5xl text-[#aa967b] font-['breathing'] mb-2">
-                  Fullstack
-                </p>
-                <p
-                  class="text-5xl text-[#aa967b] font-['breathing'] text-right"
-                >
-                  Developer
-                </p>
-              </div>
-            </div>
 
-            <!-- About Me -->
-            <div class="w-2/3 bg-[#171612] rounded-lg px-8 py-10 relative">
-              <img
-                src="./public/img/icon/flower.png"
-                alt="Flower Icon"
-                class="absolute w-20 h-20 top-4 right-4"
-              />
+        <!-- Fullstack Developer + About -->
 
-              <h3
-                class="text-4xl sm:text-5xl text-[#aa967b] font-['breathing'] mb-6"
-              >
-                About Me
-              </h3>
-
-              <p
-                class="text-base sm:text-2xl text-[#aa967b] font-['Times'] leading-relaxed mb-6"
-              >
-                Passionate IT graduate with a Bachelor’s degree in Information
-                and Communication Technology from Asia e University and a
-                Diploma from CCIT FTUI. Skilled in PHP, Laravel, JavaScript,
-                MySQL, and Tailwind CSS, with experience in software
-                development, cybersecurity, and data engineering using modern
-                tools and cloud technologies. Dedicated to continuous learning
-                and developing efficient, secure, and scalable digital
-                solutions.
-              </p>
-
-              <!-- Download CV Button -->
-              <a href="./public/cv/Faza-Rama-Nugraha-CV.pdf" download>
-                <button
-                  class="flex items-center gap-2 text-[#aa967b] font-['Times'] hover:text-[#cbb79a] transition-colors"
-                >
-                  <img
-                    src="./public/img/icon/cv.png"
-                    alt="CV Icon"
-                    class="w-6"
-                  />
-                  <span class="text-lg sm:text-xl">Download my CV</span>
-                  <img
-                    src="./public/img/icon/download.png"
-                    alt="Download Icon"
-                    class="w-4"
-                  />
-                </button>
-              </a>
-            </div>
+        <!-- Fullstack Box -->
+        <div
+          class="bg-[#171612] rounded-lg px-8 py-10 flex flex-col justify-between"
+        >
+          <div class="flex justify-end">
+            <img
+              src="./public/img/icon/star.png"
+              alt="Star Icon"
+              class="w-44"
+            />
           </div>
+          <div class="flex flex-col justify-between gap-8">
+            <p class="text-5xl text-[#aa967b] font-['breathing'] mb-2">
+              Fullstack
+            </p>
+            <p class="text-5xl text-[#aa967b] font-['breathing'] text-right">
+              Developer
+            </p>
+          </div>
+        </div>
 
-          <!-- Portfolio & Contact -->
+        <!-- About Me -->
+        <div
+          class="grid md:col-span-2 bg-[#171612] rounded-lg px-8 py-10 relative"
+        >
+          <img
+            src="./public/img/icon/flower.png"
+            alt="Flower Icon"
+            class="absolute w-52 h-52 -top-12 -right-5"
+          />
+
+          <h3
+            class="text-4xl sm:text-5xl text-[#aa967b] font-['breathing'] mb-6"
+          >
+            About Me
+          </h3>
+
+          <p
+            class="text-base sm:text-xl text-[#aa967b] font-['Times'] leading-relaxed mb-6"
+          >
+            Passionate IT graduate with a Bachelor’s degree in Information and
+            Communication Technology from Asia e University and a Diploma from
+            CCIT FTUI. Skilled in PHP, Laravel, JavaScript, MySQL, and Tailwind
+            CSS, with experience in software development, cybersecurity, and
+            data engineering using modern tools and cloud technologies.
+            Dedicated to continuous learning and developing efficient, secure,
+            and scalable digital solutions.
+          </p>
+
+          <!-- Download CV Button -->
+          <a href="./public/cv/Faza-Rama-Nugraha-CV.pdf" download>
+            <button
+              class="flex items-center gap-2 text-[#aa967b] font-['Times'] hover:text-[#cbb79a] transition-colors"
+            >
+              <img src="./public/img/icon/cv.png" alt="CV Icon" class="w-6" />
+              <span class="text-lg sm:text-xl">Download my CV</span>
+              <img
+                src="./public/img/icon/download.png"
+                alt="Download Icon"
+                class="w-4"
+              />
+            </button>
+          </a>
         </div>
 
         <!-- Right Column -->
-        <div class="w-1/3 flex flex-col gap-10">
+        <div class="flex flex-col gap-10">
           <!-- Foto di kanan -->
           <div class="flex justify-end">
             <img
@@ -118,7 +109,7 @@
 
           <!-- Social Media -->
           <div
-            class="flex flex-wrap justify-evenly items-center bg-[#171612] rounded-lg px-10 py-4 gap-6"
+            class="flex flex-wrap h-full justify-evenly items-center bg-[#171612] rounded-lg px-10 py-4 gap-6"
           >
             <a href="https://www.instagram.com/fazaraman/" target="_blank">
               <img
@@ -158,7 +149,7 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="px-20 text-[#d4bc9d]">
-      <h3 class="text-5xl font-['breathing'] text-center mt-64 mb-20">
+      <h3 class="text-5xl font-['breathing'] text-center mt-24 mb-20">
         Projects
       </h3>
       <div>
@@ -373,7 +364,7 @@
           </div>
           <!-- Slider indicators -->
           <div
-            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse pb-12"
           >
             <button
               type="button"

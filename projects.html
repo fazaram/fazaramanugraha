@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#4c342f]">
+  <body class="flex flex-col min-h-screen bg-[#4c342f]">
     <section id="portfolio" class="max-w-7xl mx-auto py-5 px-10 text-[#d4bc9d]">
       <a href="./index.html">
         <div class="flex items-center gap-4">
@@ -23,63 +23,89 @@
         </div>
       </a>
       <h3 class="text-5xl font-['breathing'] text-center mb-20">Projects</h3>
-      <div class="grid grid-cols-3 gap-4">
-        <div
-          class="max-w-sm border-[#33211d] border-2 rounded-lg shadow-sm bg-[#d4bc9d] flex flex-col justify-between"
+      <div id="cardContainer" class="grid grid-cols-3 gap-4">
+        <!-- smp bakti idhata -->
+        <a
+          href="https://solvia.id"
+          target="_blank"
+          class="block max-w-sm border-[#33211d] border-2 rounded-lg shadow-sm bg-[#d4bc9d] flex flex-col justify-between hover:shadow-white hover:shadow-2xl transition-shadow duration-300"
         >
-          <a href="#">
-            <img
-              class="rounded-t-lg"
-              src="./public/img/projects/bakdat.png"
-              alt=""
-            />
-          </a>
-          <div class="p-5 flex flex-col justify-between flex-1">
-            <div>
-              <a href="#">
-                <h5
-                  class="mb-2 text-xl font-bold tracking-tight font-['breathing'] text-[#4c342f]"
-                >
-                  SMP Bakti Idhata
-                </h5>
-              </a>
-              <p class="mb-3 font-normal font-[times] text-[#4c342f]">
-                Here I am as the Project Lead, and this project uses Node.js and
-                React.
-              </p>
-            </div>
-          </div>
-        </div>
+          <img
+            class="rounded-t-lg"
+            src="./public/img/projects/solvia.png"
+            alt="Solvia Project"
+          />
 
-        <!-- smp bakti -->
-        <div
-          class="max-w-sm border-[#33211d] border-2 rounded-lg shadow-sm bg-[#d4bc9d] flex flex-col justify-between"
-        >
-          <a href="#">
-            <img
-              class="rounded-t-lg"
-              src="./public/img/projects/solvia.png"
-              alt=""
-            />
-          </a>
           <div class="p-5 flex flex-col justify-between flex-1">
             <div>
-              <a href="#">
-                <h5
-                  class="mb-2 text-xl font-bold tracking-tight font-['breathing'] text-[#4c342f]"
-                >
-                  Solvia (Company Profile)
-                </h5>
-              </a>
+              <h5
+                class="mb-2 text-xl font-bold tracking-tight font-['breathing'] text-[#4c342f]"
+              >
+                Pinjaman Labor
+              </h5>
               <p class="mb-3 font-normal font-[times] text-[#4c342f]">
                 Here I am as the Project Lead, and this project uses Node.js and
                 React.
               </p>
             </div>
           </div>
-        </div>
+        </a>
+
+        <!-- solvia -->
+        <a
+          href="https://contoh-link-project.com"
+          target="_blank"
+          class="block max-w-sm border-[#33211d] border-2 rounded-lg shadow-sm bg-[#d4bc9d] flex flex-col justify-between hover:shadow-white hover:shadow-2xl transition-shadow duration-300"
+        >
+          <img
+            class="rounded-t-lg"
+            src="./public/img/projects/solvia.png"
+            alt="Solvia Project"
+          />
+
+          <div class="p-5 flex flex-col justify-between flex-1">
+            <div>
+              <h5
+                class="mb-2 text-xl font-bold tracking-tight font-['breathing'] text-[#4c342f]"
+              >
+                Pinjaman Labor
+              </h5>
+              <p class="mb-3 font-normal font-[times] text-[#4c342f]">
+                Here I am as the Project Lead, and this project uses Node.js and
+                React.
+              </p>
+            </div>
+          </div>
+        </a>
 
         <!-- Pinjaman labor -->
+
+        <a
+          href="https://contoh-link-project.com"
+          target="_blank"
+          class="block max-w-sm border-[#33211d] border-2 rounded-lg shadow-sm bg-[#d4bc9d] flex flex-col justify-between hover:shadow-white hover:shadow-2xl transition-shadow duration-300"
+        >
+          <img
+            class="rounded-t-lg"
+            src="./public/img/projects/solvia.png"
+            alt="Solvia Project"
+          />
+
+          <div class="p-5 flex flex-col justify-between flex-1">
+            <div>
+              <h5
+                class="mb-2 text-xl font-bold tracking-tight font-['breathing'] text-[#4c342f]"
+              >
+                Pinjaman Labor
+              </h5>
+              <p class="mb-3 font-normal font-[times] text-[#4c342f]">
+                Here I am as the Project Lead, and this project uses Node.js and
+                React.
+              </p>
+            </div>
+          </div>
+        </a>
+
         <div
           class="max-w-sm border-[#33211d] border-2 rounded-lg shadow-sm bg-[#d4bc9d] flex flex-col justify-between"
         >
@@ -185,92 +211,28 @@
           </div>
         </div>
 
-        <nav
-          aria-label="Page navigation example"
-          class="grid col-start-3 justify-end"
-        >
-          <ul class="flex items-center -space-x-px h-10 text-base gap-2">
+        <nav aria-label="Page navigation" class="mt-10 flex justify-center">
+          <ul class="flex items-center gap-2">
             <li>
               <a
                 href="#"
-                class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 border border-amber-500 hover:bg-gray-100 hover:text-gray-700 rounded-full"
-              >
-                <span class="sr-only">Previous</span>
-                <svg
-                  class="w-3 h-3 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 1 1 5l4 4"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 border border-amber-500 hover:bg-gray-100 hover:text-gray-700 rounded-full"
+                class="pagination-link flex items-center justify-center px-4 h-10 text-[#d4bc9d] border border-[#d4bc9d] hover:bg-[#d4bc9d] hover:text-white rounded-full"
                 >1</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 border border-amber-500 hover:bg-gray-100 hover:text-gray-700 rounded-full"
+                class="pagination-link flex items-center justify-center px-4 h-10 text-[#d4bc9d] border border-[#d4bc9d] hover:bg-[#d4bc9d] hover:text-white rounded-full"
                 >2</a
               >
             </li>
             <li>
               <a
                 href="#"
-                aria-current="page"
-                class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 border border-amber-500 hover:bg-gray-100 hover:text-gray-700 rounded-full"
+                class="pagination-link flex items-center justify-center px-4 h-10 text-[#d4bc9d] border border-[#d4bc9d] hover:bg-[#d4bc9d] hover:text-white rounded-full"
                 >3</a
               >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 border border-amber-500 hover:bg-gray-100 hover:text-gray-700 rounded-full"
-                >4</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 border border-amber-500 hover:bg-gray-100 hover:text-gray-700 rounded-full"
-                >5</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 border border-amber-500 hover:bg-gray-100 hover:text-gray-700 rounded-full"
-              >
-                <span class="sr-only">Next</span>
-                <svg
-                  class="w-3 h-3 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4"
-                  />
-                </svg>
-              </a>
             </li>
           </ul>
         </nav>
@@ -321,5 +283,38 @@
       </footer>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cardsPerPage = 6;
+        const cards = Array.from(
+          document.querySelectorAll("#cardContainer > a, #cardContainer > div")
+        );
+        const totalPages = Math.ceil(cards.length / cardsPerPage);
+        const paginationLinks = document.querySelectorAll(".pagination-link");
+
+        function showPage(page) {
+          cards.forEach((card, index) => {
+            card.style.display =
+              index >= (page - 1) * cardsPerPage && index < page * cardsPerPage
+                ? "block"
+                : "none";
+          });
+
+          paginationLinks.forEach((link) =>
+            link.classList.remove("bg-[#d4bc9d]", "text-white")
+          );
+          paginationLinks[page - 1].classList.add("bg-[#d4bc9d]", "text-white");
+        }
+
+        paginationLinks.forEach((link, index) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            showPage(index + 1);
+          });
+        });
+
+        showPage(1); // tampilkan halaman pertama saat load
+      });
+    </script>
   </body>
 </html>
