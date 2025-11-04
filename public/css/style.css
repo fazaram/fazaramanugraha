@@ -1,7 +1,5 @@
 .carousel {
   margin: 100px auto;
-  padding: 20px 0;
-  width: 90%;
   overflow: hidden;
   display: flex;
   > * {
@@ -17,7 +15,6 @@
   font-size: xx-large;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
 }
 .group {
   display: flex;
@@ -25,7 +22,7 @@
   /* Add padding to the right to create a gap between the last and first card. */
   padding-right: 20px;
   will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 20s linear infinite;
 }
 @keyframes scrolling {
   0% {
